@@ -1,102 +1,58 @@
-# 🛢️ Oil Well Production & Performance Analysis
+# Oil Well Production & Performance Analysis
 
-## 📌 Project Overview
+## Overview
 
-An oil production surveillance and data analytics project developed using **MySQL and Microsoft Excel** to evaluate the production performance of oil wells across multiple fields.
+This project focuses on analyzing oil well production data using MySQL and Excel. I worked with data from 20 wells across 4 fields to understand production performance, water cut, and production decline.
 
-The project analyzes oil production, water cut, production decline, and well performance to identify high-performing wells, monitor production trends, and flag wells that may require further engineering investigation.
+The main aim was to identify the better-performing wells, compare field production, and find wells that may need further attention.
 
-The objective is to demonstrate how production data can support well performance monitoring and data-driven engineering decisions.
+## Tools Used
+- MySQL
+- SQL
+- Microsoft Excel
 
-## 🛠️ Tools & Technologies
+## Analysis Performed
+- Total oil production and field-wise comparison
+- Top 10 producing wells
+- Water cut analysis
+- Production decline analysis
+- Active and inactive well status
+- Well performance classification
 
-- **MySQL:** Database management and data analysis
-- **SQL:** Data extraction, aggregation, joins, CTEs, subqueries and window functions
-- **Microsoft Excel:** KPI reporting, data visualization and interactive-style dashboard presentation
+## Well Performance Classification
 
-## 📊 Dataset Overview
+Based on production, water cut and decline, wells were grouped into three categories:
+- Strong
+- Moderate
+- Needs Attention
 
-| Parameter | Details |
-|---|---|
-| Total Wells | 20 |
-| Number of Fields | 4 |
-| Production Period | January – June 2026 |
-| Production Records | 120 well-month observations |
-| Dataset Type | Synthetic |
-| Analysis Level | Well-wise and Field-wise |
+## Excel Dashboard
 
-**Note:** The dataset is synthetically generated for analytical and educational purposes. It does not represent actual operating data from any oilfield or operator.
-
-## 🔍 Analysis Performed
-
-### 1. Production Analysis
-- Calculated total oil production across all wells.
-- Analyzed field-wise oil production.
-- Identified the top 10 producing wells.
-- Evaluated active and inactive well status.
-
-### 2. Water Cut Analysis
-- Calculated water cut for individual wells.
-- Compared water cut across different wells and fields.
-- Identified wells with relatively high water-cut percentages.
-
-### 3. Production Decline Analysis
-- Evaluated first-to-last production reduction over the observation period.
-- Compared production performance across wells and fields.
-- Identified wells showing relatively higher production reduction.
-
-### 4. Well Performance Classification
-
-Wells were classified into three categories based on cumulative oil production, water cut and production reduction:
-
-- **Strong:** Wells demonstrating relatively better production performance.
-- **Moderate:** Wells showing intermediate performance.
-- **Needs Attention:** Wells flagged for further production performance investigation.
-
-The classification uses project-defined screening thresholds and should not be interpreted as a universal industry standard or a root-cause diagnosis.
-
-## 📈 Excel Dashboard
-
-An Excel dashboard was developed to summarize the analysis through key performance indicators and visualizations.
+Created an Excel dashboard to present the analysis through KPIs, tables and charts.
 
 ### Dashboard Overview
-
-![Oil Well Production Dashboard](Screenshots/dashboard_overview.png)
+![Dashboard Overview](Screenshots/dashboard_overview.png)
 
 ### Well Performance Analysis
-
-![Top Producing Wells and Water Cut Analysis](Screenshots/well_performance.png)
+![Well Performance](Screenshots/well_performance.png)
 
 ### Monthly Production Trends
+![Monthly Trends](Screenshots/monthly_trends.png)
 
-![Monthly Oil Production Trend](Screenshots/monthly_trends.png)
+## Key Findings
+- Total Oil Production: 58,036.27 bbl
+- Average Water Cut: 25.98%
+- Active Wells: 16
+- Wells Needing Attention: 8
+- Highest Producing Field: Delta Field
 
-## 📌 Key Performance Indicators
-
-- Total Oil Production
-- Average Water Cut
-- Average First-to-Last Production Reduction
-- Active Wells
-- Wells Requiring Attention
-
-## 💡 Key Findings
-
-- **Total Oil Production:** 58,036.27 bbl
-- **Average Water Cut:** 25.98%
-- **Average First-to-Last Production Reduction:** 21.41%
-- **Active Wells:** 16
-- **Wells Needing Attention:** 8
-- **Highest Producing Field:** Delta Field (16,727.63 bbl)
-
-These findings are based on the synthetic dataset and the project's defined calculation methodology.
-
-## 📂 Project Structure
+## Project Structure
 
 ```text
 oil-well-production-analysis/
 │
 ├── SQL/
-│   └── oil_well_production_analysis.sql
+│   └── oil_well_production_analysis_final.sql
 │
 ├── Excel/
 │   └── Oil_Well_Production_Analysis_SLb_Ready.xlsx
@@ -109,36 +65,4 @@ oil-well-production-analysis/
 └── README.md
 ```
 
-## ⚙️ Methodology & Important Calculations
-
-**Water Cut (%)**
-
-Water Cut = Water Production / (Oil Production + Water Production) × 100
-
-**First-to-Last Production Reduction (%)**
-
-Production Reduction = [(Initial Oil Production − Final Oil Production) / Initial Oil Production] × 100
-
-Note: This production reduction metric represents the percentage change between the first and last observations. It is not an Arps decline-rate estimate or an annualized decline rate.
-
-## ⚠️ Project Limitations
-
-- The dataset is synthetic and based on predefined assumptions.
-- The analysis covers six monthly observations.
-- Performance classifications use project-defined thresholds.
-- Identifying a well as requiring attention does not establish the actual cause of underperformance.
-- Further investigation would require additional operating data such as flowing pressure, downtime, choke settings, artificial-lift parameters and well test information.
-
-## 🎯 Learning Outcomes
-
-- Applied SQL techniques to petroleum production datasets.
-- Developed production surveillance and well performance KPIs.
-- Analyzed water cut and production trends.
-- Used Excel to build a structured production monitoring dashboard.
-- Connected data analytics with practical petroleum engineering applications.
-
----
-
-**Developed using MySQL, SQL and Microsoft Excel.**
-
-*Petroleum Engineering | Production Surveillance | Data Analytics*
+**Note:** The project uses synthetic production data for learning and analysis. The performance categories are based on project-defined criteria.
