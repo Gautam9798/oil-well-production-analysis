@@ -31,13 +31,13 @@ Based on production, water cut and decline, wells were grouped into three catego
 Created an Excel dashboard to present the analysis through KPIs, tables and charts.
 
 ### Dashboard Overview
-![Dashboard Overview](Screenshots/dashboard_overview.png)
+![Dashboard Overview](Screenshots/Screenshot%202026-11-02%20171547.png)
 
 ### Well Performance Analysis
-![Well Performance](Screenshots/well_performance.png)
+![Well Performance](Screenshots/Screenshot%202026-11-02%20172329.png)
 
 ### Monthly Production Trends
-![Monthly Trends](Screenshots/monthly_trends.png)
+![Monthly Trends](Screenshots/Screenshot%202026-11-02%20172315.png)
 
 ## Key Findings
 - Total Oil Production: 58,036.27 bbl
